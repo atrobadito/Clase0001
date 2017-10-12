@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My first application</string>
+    <string name="lbl_titulo">Welcome to my application</string>
+    <string name="lbl_nombre">Name: </string>
+    <string name="lbl_email">Email: </string>
+    <string name="lbl_telefono">Phone: </string>
+    <string name="lbl_masculino">Male</string>
+    <string name="lbl_femenino">Female</string>
+    <string name="lbl_sexo">Sex: </string>
+    <string name="btn_enviar">Send</string>
+    <string name="btn_guardar">Save</string>
+</resources>
