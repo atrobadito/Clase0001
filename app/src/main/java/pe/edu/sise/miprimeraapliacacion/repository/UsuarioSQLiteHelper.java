@@ -10,25 +10,25 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class UsuarioSQLiteHelper extends SQLiteOpenHelper{
 
-    //1. Definir la estructura de las tablas
-    String sqlCreate="Create table Usuario(id Integer , " +
-            "Nombre TEXT, email TEXT, teledono TEXT, sexo Integer) ";
+    // 1. Definir la estructura de las tablas:
+        String sqlCreate = "CREATE TABLE Usuario (id Integer, " +
+                        "nombre TEXT, email TEXT, teledono TEXT, sexo Integer) ";
 
-    public UsuarioSQLiteHelper(Context context,
-                               String name,
-                               SQLiteDatabase.CursorFactory factory,
-                               int version) {
-        super(context, name, factory, version);
-    }
+                public UsuarioSQLiteHelper(Context context,
+                                                                           String name,
+                                                                           SQLiteDatabase.CursorFactory factory,
+                                                                           int version) {
+                super(context, name, factory, version);
+            }
 
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(sqlCreate);
-    }
+                @Override
+        public void onCreate(SQLiteDatabase db) {
+                db.execSQL(sqlCreate);
+            }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXIST Usuario");
-        db.execSQL(sqlCreate);
-    }
+               @Override
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+                db.execSQL("DROP TABLE IF EXIST Usuario");
+               db.execSQL(sqlCreate);
+            }
 }
