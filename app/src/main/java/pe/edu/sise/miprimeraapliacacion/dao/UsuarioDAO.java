@@ -8,6 +8,7 @@ import pe.edu.sise.miprimeraapliacacion.repository.UsuarioSQLiteHelper;
 
 /**
  * Created by cisco on 13/10/2017.
+ * Ultimo push
  */
 
 public class UsuarioDAO {
